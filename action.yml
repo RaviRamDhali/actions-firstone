@@ -2,13 +2,13 @@ name: 'First Action'
 description: 'My First action to call from remote action'
 author: 'Ravi Ram'
 
-inputs:
-  gituser:
-    description: 'The current git user'
-    required: true
-  repositoryname:
-    description: 'Target website'
-    required: true
+# inputs:
+#   gituser:
+#     description: 'The current git user'
+#     required: true
+#   repositoryname:
+#     description: 'Target website'
+#     required: true
     
 jobs:
   main:
