@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
  
     steps:
+      - run: echo *************************'
+      - run: echo '*********** RaviRam first action ***************'
+      - run: echo *************************'
       - run: echo Committed by ${{github.actor}}
       - run: echo Repository Path ${{github.repository}}
       - run: echo Repository Name ${{ github.event.repository.name }} 
