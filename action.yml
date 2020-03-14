@@ -2,13 +2,19 @@ name: 'First Action'
 description: 'My First action to call from remote action'
 author: 'Ravi Ram'
 
-on: push
-name: IF Publish Website
+inputs:
+  gituser:
+    description: 'The current git user'
+    required: true
+  repositoryname:
+    description: 'Target website'
+    required: true
+    
 jobs:
   main:
     name: WhoCommit
     runs-on: ubuntu-latest
-  
+ 
     steps:
       - run: echo Committed by ${{github.actor}}
       - run: echo Repository Path ${{github.repository}}
