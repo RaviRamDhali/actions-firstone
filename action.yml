@@ -10,7 +10,9 @@ author: 'Ravi Ram'
 #     description: 'Target website'
 #     required: true
 
-runs-on: ubuntu-latest
+runs:
+  using: 'node12'
+#   main: 'index.js'
 
 jobs:
   main:
